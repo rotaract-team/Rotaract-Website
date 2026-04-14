@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>pengurus page</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    section {
+      padding: 80px 0;
+    }
+
+    .card img {
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .logo-navbar {
+      height: 40px;
+    }
+
+    .modal-backdrop.show {
+      backdrop-filter: blur(5px);
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- 🔝 NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+  <div class="container">
+
+    <!-- KIRI (LOGO = HOME) -->
+    <a class="navbar-brand" href="#home">
+      <img src="2.%20Logo%20Rotaract.png" class="logo-navbar">
+    </a>
+
+    <!-- TOGGLER (HP) -->
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- KANAN (MENU) -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#pengurus">Pengurus</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#divisi">Divisi</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <!-- KANAN (LOGO = HOME BUTTON) -->
+    <a href="#home">
+      <img src="2.%20Logo%20Rotaract.png" class="logo-navbar">
+    </a>
+
+    <!-- TOGGLER (HP) -->
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+  </div>
+</nav>
+
+<!-- 👥 PENGURUS -->
+<section id="pengurus" class="text-center">
+  <div class="container">
+
+    <h2 class="fw-bold">Our Leadership</h2>
+    <p class="text-muted">Struktur inti UKM Roktarat</p>
+
+    <div class="row mt-4 justify-content-center">
+
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="card shadow-sm">
+          <img src="home.jpg">
+          <div class="card-body">
+            <h5>Ketua UKM</h5>
+            <p class="text-muted">Bobby miracle hardiansyah </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="card shadow-sm">
+          <img src="home.jpg">
+          <div class="card-body">
+            <h5>Sekretaris </h5>
+            <p class="text-muted">Samuel Delon Kurniawan</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6 mb-4">
+        <div class="card shadow-sm">
+          <img src="home.jpg">
+          <div class="card-body">
+            <h5>Bendahara</h5>
+            <p class="text-muted">Nama Sekretaris</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- 🧩 DIVISI -->
+<section id="divisi" class="bg-light text-center">
+  <div class="container">
+
+    <h2 class="fw-bold">Divisi</h2>
+    <p class="text-muted">Bagian dalam UKM</p>
+
+    <div class="row mt-4 justify-content-center">
+
+      <!-- ACARA -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm">
+          <img src="home.jpg">
+          <div class="card-body">
+            <h5>Acara</h5>
+            <button class="btn btn-primary btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#modalAcara">
+              Lihat Anggota
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- AKPER -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm">
+          <img src="home.jpg">
+          <div class="card-body">
+            <h5>Akper</h5>
+            <button class="btn btn-primary btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#modalAkper">
+              Lihat Anggota
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- DANA -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm">
+          <img src="home.jpg">
+          <div class="card-body">
+            <h5>Dana</h5>
+            <button class="btn btn-primary btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#modalDana">
+              Lihat Anggota
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- PUBLIKASI -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm">
+          <img src="home.jpg">
+          <div class="card-body">
+            <h5>Publikasi Deskripsi</h5>
+            <button class="btn btn-primary btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#modalPublikasi">
+              Lihat Anggota
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- KONSUMSI -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm">
+          <img src="home.jpg">
+          <div class="card-body">
+            <h5>Konsumsi</h5>
+            <button class="btn btn-primary btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#modalKonsumsi">
+              Lihat Anggota
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- MODAL ACARA -->
+<div class="modal fade" id="modalAcara" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Divisi Acara</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>Anggota 1</li>
+          <li>Anggota 2</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL AKPER -->
+<div class="modal fade" id="modalAkper" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Divisi Akper</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>Anggota 1</li>
+          <li>Anggota 2</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL DANA -->
+<div class="modal fade" id="modalDana" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Divisi Dana</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>Anggota 1</li>
+          <li>Anggota 2</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL PUBLIKASI -->
+<div class="modal fade" id="modalPublikasi" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Divisi Publikasi</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>Anggota 1</li>
+          <li>Anggota 2</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL KONSUMSI -->
+<div class="modal fade" id="modalKonsumsi" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Divisi Konsumsi</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>Anggota 1</li>
+          <li>Anggota 2</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
